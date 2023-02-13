@@ -1,15 +1,3 @@
-<!-- TABLE OF CONTENTS -->
-The project is a small food ordering system that includes a calendar, menu, and order confirmation details. The system will use either a MySQL database to store the order history. The system should be packaged as a Docker container and a Helm chart so that it can be tested on a test Kubernetes cluster.
-
-The system is built with PHP and requires the following extensions to be installed: mysql, libzip-dev, zip, libcurl4-openssl-dev, pkg-config, libssl-dev, libicu-dev, libjpeg-dev, libpng-dev, libfreetype6-dev, libjpeg62-turbo-dev, and libpq-dev.
-
-
-
-<!-- ABOUT THE PROJECT -->
-
-About The Project Use any preferred language to develop a small food ordering system with a calendar, menu and order confirmation details. The DB (mysql) to keep the history of the orders.
- 1. To be running as docker container (So that we can test it in our test kubernetes)
-
 
 About The Project Use any preferred language to develop a small food ordering system with a calendar, menu and order confirmation details. The DB (mysql) to keep the history of the orders.
  1. To be running as docker container (So that we can test it in our test kubernetes)
@@ -17,10 +5,9 @@ About The Project Use any preferred language to develop a small food ordering sy
  3. Bundle all these as helm chart 
  4. Share us the website code and dockerfile via github and a readme file on how to run this and make it up on our kubernetes cluster to test Should be able to create at-least one order successfully
 
+#Project Details
 
-
-Built With This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples. The Dockerfile installs the following required extensions for the
-PHP application: 
+The Dockerfile installs the following required extensions for the PHP application: 
 Mysql
 libzip-dev
 zip
@@ -70,7 +57,8 @@ This is a Docker image for running a PHP application using Apache web server. It
     libfreetype6-dev
     libjpeg62-turbo-dev
     libpq-dev
-        Additionally, the following PHP extensions are installed:
+        
+Additionally, the following PHP extensions are installed:
 
     zip
     curl
