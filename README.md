@@ -34,7 +34,7 @@ Installation _Below is an example of how you can instruct your audience on insta
 
 1. Clone the repo 
 ```sh 
-git clone https://github.com/niteshbhat/civica2.git && cd foodorderingsystem
+git clone https://github.com/niteshbhat/foodorderingsystem && cd foodorderingsystem
 ``` 
 2. using helm chart install the product into kubernetes cluster
  ```sh
