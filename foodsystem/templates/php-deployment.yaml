@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name  }}-php
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Release.Name  }}-php
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-php
+    spec:
+      containers:
+      - name: {{ .Release.Name }}-php
+        image: {{ .Values.image.repository }}:latest
+        ports:
+        - containerPort: {{ .Values.image.port }}

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name  }}-mysql
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Release.Name  }}-mysql
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name  }}-mysql
+    spec:
+      containers:
+      - name: {{ .Release.Name }}-mysql
+        image: {{ .Values.image2.repository }}:latest
+        ports:
+        - containerPort: {{ .Values.image2.port }}

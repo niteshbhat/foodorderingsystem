@@ -1,0 +1,31 @@
+#parameter values
+replicaCount: 1
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+env:
+  - name: MY_VAR
+    value: "42"
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+#used in php images where application code is configure
+image:
+  name: http
+  repository: evila/food-ordering-system
+  tag: v3-release
+  pullPolicy: IfNotPresent
+  port: 80
+  targetPort: 80
+
+#used mysql based database when application is used to connect
+image2:
+  name: mysql
+  repository: evila/food-ordering-system-database
+  tag: v3-release
+  pullPolicy: IfNotPresent
+  port: 3306

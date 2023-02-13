@@ -1,0 +1,10 @@
+FROM mysql:5.7
+
+ENV MYSQL_ROOT_PASSWORD=root \
+    MYSQL_DATABASE=local_db 
+
+COPY ./create-local-db.sql /tmp
+
+EXPOSE 3360
+
+CMD [ "mysqld", "--init-file=/tmp/create-local-db.sql" ]
