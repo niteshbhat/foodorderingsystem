@@ -5,29 +5,6 @@ About The Project Use any preferred language to develop a small food ordering sy
  3. Bundle all these as helm chart 
  4. Share us the website code and dockerfile via github and a readme file on how to run this and make it up on our kubernetes cluster to test Should be able to create at-least one order successfully
  
- 
- <style>
-.rotate {
-  display: inline-block;
-  animation: rotation 5s infinite linear;
-}
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-</style>
-<img src="https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/localhost_landing%20page.png" class="rotate" alt="localhost">
-<img src="https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/orderdetail-Food%20Restaurants.png" class="rotate" alt="Order Detail">
-<img src="https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/listorder-Food%20order%20system.png" class="rotate" alt="Order entery">
-<img src="https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/ordershistory-Food%20order%20system.png" class="rotate" alt="Order History">
-<img src="https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/infrastructure_k8sdetails.png" class="rotate" alt="k8S Detail">
-<img src="https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/mysql_details.png" class="rotate" alt="SQL Database Detail">
-
 
 #Project Details
 
@@ -163,3 +140,9 @@ Docker Image for MySQL
         CMD [ "mysqld", "--init-file=/tmp/create-local-db.sql" ]
 
     ```
+![Alt text](https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/localhost_landing%20page.png)
+![Alt text](https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/orderdetail-Food%20Restaurants.png)
+![Alt text](https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/listorder-Food%20order%20system.png)
+![Alt text](https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/ordershistory-Food%20order%20system.png)
+![Alt text](https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/infrastructure_k8sdetails.png)
+![Alt text](https://github.com/niteshbhat/foodorderingsystem/blob/Master/Screenshot/mysql_details.png)
